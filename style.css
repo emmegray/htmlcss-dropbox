@@ -1,7 +1,6 @@
 /* HEADER */
 
 header {
-    background-color: paleturquoise;
     height: 80px;
     padding: calc(calc(80px - 30px) / 2) 10px;
     position: relative;
@@ -47,10 +46,61 @@ header a {
     float: right;
 }
 
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
 /* JUMBOTRON */
 
 .jumbotron {
     background-color: #b4d0e7;
+    min-height: 740px;
+    margin-bottom: 100px;
+}
+
+.jumbotron .container {
+    max-width: 1280px;
+    height: 100%;
+    padding-top: 100px;
+}
+
+.jumbotron .container> * {
+    float: left;
+}
+
+.jumbotron h1 {
+    font-size: 75px;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.jumbotron .text {
+    width: 400px;
+    margin-right: 70px;
+}
+
+.jumbotron .text p:first-child {
+    line-height: 1.5rem;
+    margin-bottom: 35px;
+}
+
+.jumbotron .text p:last-of-type {
+    margin-bottom: 50px;
+}
+
+.jumbotron .text i {
+    font-size: 3rem;
+}
+
+.jumbotron .text .button {
+    margin-bottom: 15px;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.jumbotron img {
+    width: 790px;
 }
 
 /* MAIN */
