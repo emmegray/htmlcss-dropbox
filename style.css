@@ -1,6 +1,57 @@
 /* HEADER */
 
+header {
+    background-color: paleturquoise;
+    height: 80px;
+    padding: calc(calc(80px - 30px) / 2) 10px;
+    position: relative;
+    text-align: center;
+}
+
+header img {
+    float: left;
+    margin-right: 10px;
+}
+
+header ul {
+    list-style: none;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+header li {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: ;
+}
+
+header li:last-child {
+    margin-right: 0;
+}
+
+header li:first-child {
+    margin-left: 0;
+}
+
+header a {
+    color: gray;
+    text-decoration: none;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
 /* JUMBOTRON */
+
+.jumbotron {
+    background-color: #b4d0e7;
+}
 
 /* MAIN */
 
