@@ -2,28 +2,33 @@
 
 header {
     height: 80px;
-    padding: calc(calc(80px - 30px) / 2) 10px;
     position: relative;
     text-align: center;
+    padding: 0 20px;
 }
 
 header img {
     float: left;
     margin-right: 10px;
+    height: 80px;
+    padding: calc(calc(80px - 30px) / 2) 10px;
 }
 
 header ul {
     list-style: none;
     text-decoration: none;
     font-weight: bold;
-    line-height: 25px;
+    line-height: 80px;
 }
 
 header li {
     display: inline-block;
-    margin: 0 10px;
-    font-size: ;
+    margin: 0 20px;
 }
+
+/* header li a:hover {
+    border-bottom: 2px darkgray;
+} */
 
 header li:last-child {
     margin-right: 0;
@@ -56,7 +61,7 @@ header a {
 .jumbotron {
     background-color: #b4d0e7;
     min-height: 740px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 
 .jumbotron .container {
@@ -73,6 +78,7 @@ header a {
     font-size: 75px;
     width: 100%;
     margin-bottom: 60px;
+    line-height: 6rem;
 }
 
 .jumbotron .text {
@@ -96,7 +102,6 @@ header a {
 .jumbotron .text .button {
     margin-bottom: 15px;
     display: inline-block;
-    padding: 10px 20px;
 }
 
 .jumbotron img {
@@ -104,6 +109,95 @@ header a {
 }
 
 /* MAIN */
+
+main {
+    margin: 0 700px;
+}
+
+main .pricing h2 {
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+}
+
+.price-choice {
+    margin-bottom: 30px;
+}
+
+.price-choice span:first-child {
+    padding-right: 10px;
+}
+
+.pricing .price-column {
+    border: 2px lightgray solid;
+    max-width: calc(100% / 3);
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+
+.price-column .price-type {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 2px lightgray solid;
+}
+
+.price-column .price-desc {
+    padding: 30px;
+    line-height: 20px;
+}
+
+.price-column .price-name {
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+
+.price-column .price-desc ul {
+    margin-bottom: 50px;
+}
+
+.price-column .price-desc ul li {
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.price-column .price-desc ul li i{
+    left: 0px;
+    top: 1px;
+    position: absolute;
+    font-size: 0.9rem;
+}
+
+.button-trial {
+    margin-bottom: 30px;
+}
+
+.button-trial .button {
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.button-trial span a:link {
+    color: #0061ff;
+    font-weight: bold;
+}
+
+span.line {
+    border-bottom: 1px solid lightgrey;
+    display: inline-block;
+    width: 50px;
+    margin-bottom: 30px;
+}
+
+.price-desc h4 {
+    margin-bottom: 30px;
+}
+
+.price-desc ul.blue i {
+    color: #0061ff;
+}
 
 /* SECTION */
 

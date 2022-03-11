@@ -4,11 +4,11 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .button {
-    padding: 5px 20px;
+    padding: 10px 20px;
     text-decoration: none;
     font-weight: bold;
 }
@@ -16,4 +16,8 @@
 .button.blue {
     color: white;
     background-color: #0061ff;
+}
+
+ul li {
+    list-style: none;
 }
