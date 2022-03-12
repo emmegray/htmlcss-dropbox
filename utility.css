@@ -4,13 +4,15 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 .button {
     padding: 10px 20px;
     text-decoration: none;
     font-weight: bold;
+    border: 1px gray solid;
+    color: gray;
 }
 
 .button.blue {
