@@ -3,8 +3,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+/* 
+    border: 1px solid red; */
+}
 
-    border: 1px solid red;
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 60px;
 }
 
 .button {
@@ -22,4 +27,30 @@
 
 ul li {
     list-style: none;
+}
+
+.col3 {
+    float: left;
+    width: calc(calc(100% - 130px) / 3);
+    margin-right: 65px;
+    margin-bottom: 50px;
+}
+
+.col3.no-margin {
+    margin-right: 0;
+}
+
+span.line {
+    border-bottom: 1px solid lightgrey;
+    display: inline-block;
+    width: 50px;
+    margin-bottom: 30px;
+}
+
+.bg-green {
+    background-color: green;
+}
+
+.bg-red {
+    background-color: red;
 }
