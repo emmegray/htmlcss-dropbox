@@ -24,9 +24,10 @@ header ul {
 header li {
     display: inline-block;
     margin: 0 20px;
+    height: 80px;
 }
 
-header li:hover {
+header li:hover:not(ul.right li:last-child){
     border-bottom: 2px solid black;
 }
 
@@ -262,6 +263,10 @@ main > *.full .inside {
     color: black;
 }
 
+.casestudy {
+    margin-bottom: 0;
+}
+
 .casestudy .inside > *{
     margin-bottom: 40px;
 }
@@ -294,11 +299,17 @@ main > *.full .inside {
     width: 50%;
     height: 50%;
     position: relative;
+    border-color: rgba(255, 255, 255, 0.507);
+}
+
+.grid .tile:hover {
+    border: 10px rgba(255, 255, 255, 0.507) solid;
+    transition: border 0.5s ease-in;
 }
 
 .grid .tile img {
-    max-width: 60%;
-    max-height: 50%;
+    max-width: 150px;
+    max-height: 150px;
     filter: brightness(0) invert(1);
     position: absolute;
     top: 50%;
@@ -308,44 +319,46 @@ main > *.full .inside {
 
 .business-trial {
     background-color: #b4d0e7;
-    padding-top: 130px;
-    padding-left: 410px;
-    padding-bottom: 130px;
+    padding: 130px 0;
+}
+
+.business-trial .inside {
     position: relative;
 }
 
 .business-trial h2 {
     color: #61082b;
-    max-width: 1080px;
+    margin-bottom: 0;
 }
 
 .business-trial .button {
     background-color: white;
     color: black;
     position: absolute;
-    top: 130px;
-    right: 400px;
+    top: 0;
+    right: 0;
     padding: 10px 100px;
     border: none;
 }
 
-.fag {
+.faq {
     margin-bottom: 100px;
 }
 
-.faq .line {
+.faq div {
+    position: relative;
+    padding: 20px 0;
     width: 100%;
+    border-bottom: 1px gray solid;
 }
 
-.faq ul {
-    font-weight: bolder;
-    margin-bottom: 20px;
+.faq div:first-of-type {
+    border-top: 1px gray solid;
 }
 
 .faq i {
-    position: relative;
-    bottom: 40px;
-    left: 1050px;
+    position: absolute;
+    right: 0;
 }
 
 /* FOOTER */
@@ -355,12 +368,11 @@ footer {
     overflow: hidden;
 }
 
-footer .container-list {
-    margin: 0 auto;
-    text-decoration: none;
-    list-style: none;
-    padding: 100px 200px 50px;
+footer .container {
+    margin: 75px auto;
+    max-width: 1280px;
     color: white;
+    overflow: hidden;
 }
 
 footer a {
@@ -369,19 +381,24 @@ footer a {
     font-size: 0.8rem;
 }
 
-footer li ul {
-    padding: 10px;
+footer ul li {
+    padding-bottom: 10px;
+}
+
+footer ul li:first-child {
+    padding-bottom: 20px;
+}
+
+footer ul {
+    float: left;
+    padding-right: 100px;
 }
 
 footer span.line {
     width: 110px;
-    margin-left: 100px;
 }
 
 footer .langues {
     color: gray;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 50px;
     font-size: 0.8rem;
 }
