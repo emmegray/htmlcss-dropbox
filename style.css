@@ -328,6 +328,10 @@ main > *.full .inside {
     padding: 10px 100px;
 }
 
+.fag {
+    margin-bottom: 100px;
+}
+
 .faq .line {
     width: 100%;
 }
@@ -347,6 +351,32 @@ main > *.full .inside {
 
 footer {
     background-color: black;
-    color: white;
+    overflow: hidden;
+}
+
+footer .container-list {
     margin: 0 auto;
+    text-decoration: none;
+    list-style: none;
+    padding: 100px 200px 50px;
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+footer span.line {
+    width: 110px;
+    margin-left: 100px;
+}
+
+footer .langues {
+    color: gray;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    font-size: 0.8rem;
 }
