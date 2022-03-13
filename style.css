@@ -26,9 +26,9 @@ header li {
     margin: 0 20px;
 }
 
-/* header li a:hover {
-    border-bottom: 2px darkgray;
-} */
+header li:hover {
+    border-bottom: 2px solid black;
+}
 
 header li:last-child {
     margin-right: 0;
@@ -326,6 +326,7 @@ main > *.full .inside {
     top: 130px;
     right: 400px;
     padding: 10px 100px;
+    border: none;
 }
 
 .fag {
@@ -366,6 +367,10 @@ footer a {
     color: white;
     text-decoration: none;
     font-size: 0.8rem;
+}
+
+footer li ul {
+    padding: 10px;
 }
 
 footer span.line {

@@ -20,6 +20,10 @@ h2 {
     color: gray;
 }
 
+.button:hover {
+    opacity: 50%;
+}
+
 .button.blue {
     color: white;
     background-color: #0061ff;
