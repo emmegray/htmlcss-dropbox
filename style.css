@@ -309,13 +309,14 @@ main > *.full .inside {
 .business-trial {
     background-color: #b4d0e7;
     padding-top: 130px;
-    padding-left: 270px;
+    padding-left: 410px;
     padding-bottom: 130px;
     position: relative;
 }
 
 .business-trial h2 {
     color: #61082b;
+    max-width: 1080px;
 }
 
 .business-trial .button {
@@ -323,8 +324,29 @@ main > *.full .inside {
     color: black;
     position: absolute;
     top: 130px;
-    right: 260px;
+    right: 400px;
     padding: 10px 100px;
 }
 
+.faq .line {
+    width: 100%;
+}
+
+.faq ul {
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.faq i {
+    position: relative;
+    bottom: 40px;
+    left: 1050px;
+}
+
 /* FOOTER */
+
+footer {
+    background-color: black;
+    color: white;
+    margin: 0 auto;
+}
