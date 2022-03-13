@@ -258,6 +258,10 @@ main > *.full .inside {
     margin-bottom: 20px;    
 }
 
+.business a {
+    color: black;
+}
+
 .casestudy .inside > *{
     margin-bottom: 40px;
 }
@@ -302,6 +306,25 @@ main > *.full .inside {
     transform: translateX(-50%) translateY(-50%);
 }
 
-/* SECTION */
+.business-trial {
+    background-color: #b4d0e7;
+    padding-top: 130px;
+    padding-left: 270px;
+    padding-bottom: 130px;
+    position: relative;
+}
+
+.business-trial h2 {
+    color: #61082b;
+}
+
+.business-trial .button {
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 130px;
+    right: 260px;
+    padding: 10px 100px;
+}
 
 /* FOOTER */
