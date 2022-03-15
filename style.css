@@ -14,28 +14,53 @@ header img {
     padding: calc(calc(80px - 30px) / 2) 10px;
 }
 
-header ul {
+header > ul {
     list-style: none;
     text-decoration: none;
     font-weight: bold;
     line-height: 80px;
 }
 
-header li {
+header > ul > li {
     display: inline-block;
     margin: 0 20px;
     height: 80px;
+    position: relative;
 }
 
-header li:hover:not(ul.right li:last-child){
+header > ul > li .dropdown {
+    display: none;
+    position: absolute;
+    left: -20px;
+    background-color: #fbfbfb;
+    line-height: 30px;
+    padding: 20px 0px;
+}
+
+header > ul > li:hover .dropdown {
+    display: block;
+}
+
+header > ul > li .dropdown li {
+    text-align: left;
+    padding: 10px 30px;
+    font-size: 0.9rem;
+    width: 250px;
+}
+
+header > ul > li .dropdown li:hover {
+    background: #ececea;  
+}
+
+header > ul >  li:hover:not(ul.right li:last-child){
     border-bottom: 2px solid black;
 }
 
-header li:last-child {
+header > ul >  li:last-child {
     margin-right: 0;
 }
 
-header li:first-child {
+header > ul >  li:first-child {
     margin-left: 0;
 }
 
@@ -299,12 +324,10 @@ main > *.full .inside {
     width: 50%;
     height: 50%;
     position: relative;
-    border-color: rgba(255, 255, 255, 0.507);
 }
 
-.grid .tile:hover {
+.grid:first-of-type .tile:first-child {
     border: 10px rgba(255, 255, 255, 0.507) solid;
-    transition: border 0.5s ease-in;
 }
 
 .grid .tile img {
@@ -359,6 +382,40 @@ main > *.full .inside {
 .faq i {
     position: absolute;
     right: 0;
+    transition: 0.2s;
+}
+
+.faq label {
+    display: block; 
+}
+
+.faq .toggle {
+    display: none;
+}
+
+.faq .toggle:checked ~ label i{
+   transform: rotate(180deg);
+}
+
+.faq .answer {
+    padding-right: 60px;
+    transform: scaleY(0);
+    height: 0;
+    padding-top: 0;
+    color: gray;
+}
+
+.faq .answer a {
+    color: gray;
+}
+
+.faq .toggle:checked ~ .answer{
+    padding-top: 20px;
+    transform: scaleY(1);
+    transition: transform 0.3s ease-out;
+    transform-origin:top;
+    height:auto;
+    overflow:hidden;
 }
 
 /* FOOTER */
